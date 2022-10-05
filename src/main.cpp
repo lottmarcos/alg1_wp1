@@ -1,19 +1,13 @@
-#include <iostream>
-#include <map>
-#include <string>
-#include <vector>
 #include "campanha.hpp"
 
-int main() {
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+  if (!verify_args)
+    return 0;
+
   
-  //make a vector of ints
-  std::vector<int> v;
-
-  //make a map of strings to ints
-  std::map<std::string, int> m;
-
-  // call a function in another file
-  test();
-
-  return(0);
+  return 0;
 }
+

@@ -1,3 +1,6 @@
 #include <iostream>
+#include <map>
+#include <string>
+#include <vector>
 
-void test();
+bool verify_args(int argc, string argv);

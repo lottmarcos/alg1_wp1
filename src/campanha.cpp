@@ -1,7 +1,6 @@
 #include "campanha.hpp"
 
-void test(){
-
-    std::cout << "Funciona!";
+bool verify_args(int argc, string argv) 
+{
 
 }
