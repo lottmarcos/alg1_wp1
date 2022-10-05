@@ -3,4 +3,6 @@
 #include <string>
 #include <vector>
 
-bool verify_args(int argc, string argv);
+using namespace std;
+
+bool verify_args(int argc, char **argv);

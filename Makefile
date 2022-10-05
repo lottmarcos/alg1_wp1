@@ -22,7 +22,7 @@ all: $(OBJ)
 	$(CC) $(CXXFLAGS) -o $(BIN_FOLFER)$(TARGET) $(OBJ)
 
 run:
-	./bin/tp01
+	./bin/tp01 ./input/teste
 
 clean: 
 	@rm -rf $(OBJ_FOLDER)* $(BIN_FOLFER)* $(OUTPUT_FOLFER)*
