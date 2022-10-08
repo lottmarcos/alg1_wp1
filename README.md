@@ -1,1 +1,1 @@
-college work project about algorithms.
+college work project about the 2-SAT algorithm.
