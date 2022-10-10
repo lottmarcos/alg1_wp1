@@ -20,8 +20,6 @@ $(OBJ_FOLDER)%.o: $(SRC_FOLDER)%.cpp
 
 all: $(OBJ)
 	$(CC) $(CXXFLAGS) -o $(BIN_FOLFER)$(TARGET) $(OBJ)
-
-run:
 	./bin/tp01 ./input/entrada.txt
 
 clean: 
