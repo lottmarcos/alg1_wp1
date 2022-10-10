@@ -24,15 +24,41 @@ int main(int argc, char **argv)
     int S = stoi(firstline);
     inputfile >> firstline;
     int P = stoi(firstline);
+
+    //check if values are correct and closing the program in case it´s done
     if (!verify_SP(S, P))
     {
       inputfile.close();
       break;
     }
+
+    //stores the votes of the followers in a 2D vector
+    int vec[S][4];
+    int vote;
+    string aux;
+
+    for (int i = 0; i < S; i++)
+    {
+       for (int j = 0; j < 4; j++)
+       {
+          inputfile >> aux;
+          vote = stoi(aux);
+          if (vote > P)
+          {
+            cout << "ERROR: invalid inputs" << endl;
+            return 0;
+          }
+          vec[i][j] = vote;
+       }
+    }
+    
+    //generates the outputs
+    if(check_satisfability(S, P, vec[0]))
+      cout << "sim" << endl;
+    else
+      cout << "nao" << endl;
+
   }
 
-
-  
   return 0;
 }
-
